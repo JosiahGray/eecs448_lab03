@@ -4,7 +4,7 @@ function changeBorder()
 	var green = document.getElementById("borderG").value;
 	var blue = document.getElementById("borderB").value;
 	var par = document.getElementById("myP");
-	
+
 	/*
 	if(typeof red === "number")
 	{
@@ -18,7 +18,7 @@ function changeBorder()
 	{
 		red = 0;
 	}
-	
+
 	if(typeof green === "number")
 	{
 		green = parseInt(green);
@@ -31,7 +31,7 @@ function changeBorder()
 	{
 		green = 0;
 	}
-	
+
 	if(typeof blue === "number")
 	{
 		blue = parseInt(blue);
@@ -44,10 +44,10 @@ function changeBorder()
 	{
 		blue = 0;
 	}
-	
-	par.style.borderColor = "rgb(" + red + ", " + green ", " + blue + ")";
+
+	par.style.borderColor = rgb(red, green, blue);
 	*/
-	
+
 	par.style.borderColor = "#" + red + green + blue;
 }
 
@@ -57,7 +57,7 @@ function changeBackground()
 	var green = document.getElementById("backG").value;
 	var blue = document.getElementById("backB").value;
 	var par = document.getElementById("myP");
-	
+
 	/*
 	if(typeof red === "number")
 	{
@@ -71,7 +71,7 @@ function changeBackground()
 	{
 		red = 0;
 	}
-	
+
 	if(typeof green === "number")
 	{
 		green = parseInt(green);
@@ -84,7 +84,7 @@ function changeBackground()
 	{
 		green = 0;
 	}
-	
+
 	if(typeof blue === "number")
 	{
 		blue = parseInt(blue);
@@ -97,10 +97,15 @@ function changeBackground()
 	{
 		blue = 0;
 	}
-	
-	par.style.backgroundColor = "rgb(" + red + "," + green "," + blue + ")";
 	*/
-	
+
+	//par.style.backgroundColor = rgb(red, green, blue);
+
 	par.style.backgroundColor = "#" + red + green + blue;
-	
+
+}
+
+function rgb(red, green, blue)
+{
+	return("rgb(" + red + "," + green + "," + blue + ")");
 }
