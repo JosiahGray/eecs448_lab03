@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title> CSS Manipulation </title>
+	<link href="manipulationCSS.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="manipulate.js"></script>
+  </head>
+
+  <body>
+    <h1> CSS Manipulation </h1>
+	<p id="myP">
+		Use the following input boxes and buttons <br>
+		to change the color values for this paragraph's <br>
+		border and background color. <br>
+		(all entered values must be hexadecimal between 00 and ff or they will not work)
+	</p>
+	
+    <form>
+	  <h3>Border: </h3>
+      Red Value:
+      <input type="text" id="borderR"><br>
+      
+      Green Value:
+      <input type="text" id="borderG"><br>
+      
+	  Blue Value:
+	  <input type="text" id="borderB"><br>
+	  
+      <button type="button" onclick="changeBorder()"> Change Border </button>
+	  
+	  <br><br>
+	  <h3> Background: </h3>
+	  Red Value:
+      <input type="text" id="backR"><br>
+      
+      Green Value:
+      <input type="text" id="backG"><br>
+      
+	  Blue Value:
+	  <input type="text" id="backB"><br>
+	  
+      <button type="button" onclick="changeBackground()"> Change Background </button>
+    </form>
+	
+  </body>
+</html>
