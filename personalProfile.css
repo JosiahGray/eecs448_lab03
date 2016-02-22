@@ -1,0 +1,37 @@
+body
+{
+ /* background-color: rgb(0, 102, 204);*/
+  background-color: black;
+  color: white;
+}
+
+p.slogan
+{
+  /*color: rgb(255, 153, 0);*/
+  color: rgb(0, 204, 0);
+  font-family: quartz MS;
+  font-size: 16pt;
+}
+
+p.biography
+{
+  color: black;
+  font-family: times new roman;
+  font-size: 16pt;
+  background-image: url(images/paper.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a
+{
+  /*color: rgb(255, 153, 0);*/
+  color: rgb(0, 204, 0);
+  font-size: 15pt;
+}
+
+a:hover
+{
+  background-color: yellow;
+  color: red;
+}
